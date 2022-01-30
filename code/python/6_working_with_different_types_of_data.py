@@ -1,5 +1,3 @@
-import imp
-from ssl import cert_time_to_seconds
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 spark.conf.set("pyspark.sql.shuffle.partitions","5")
